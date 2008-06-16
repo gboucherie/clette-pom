@@ -61,6 +61,25 @@ This is a super pom for all my java projects.
           <artifactId>maven-verifier-plugin</artifactId>
           <version>1.0-beta-1</version>
         </plugin>
+
+        <!-- PACKAGING TYPES / TOOLS -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.2</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-BuildTimestamp>${timestamp}</Implementation-BuildTimestamp>
+                <Implementation-SCMRevision>${buildNumber}</Implementation-SCMRevision>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <extensions>
@@ -74,6 +93,12 @@ This is a super pom for all my java projects.
 
   <name>clette-pom</name>
   <url>http://maven.apache.org</url>
+
+  <scm>
+    <connection>scm:svn:http://ubuntu/svn/clette-pom/trunk/</connection>
+    <developerConnection>scm:svn:http://ubuntu/svn/clette-pom/trunk/</developerConnection>
+    <url>http://ubuntu/svn/clette-pom/trunk/</url>
+  </scm>
 
   <distributionManagement>
     <repository>
