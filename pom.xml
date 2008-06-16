@@ -21,10 +21,27 @@ This is a super pom for all my java projects.
         </plugin>
       </plugins>
     </pluginManagement>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-webdav</artifactId>
+        <version>1.0-beta-2</version>
+      </extension>
+    </extensions>
   </build>
 
   <name>clette-pom</name>
   <url>http://maven.apache.org</url>
 
+  <distributionManagement>
+    <repository>
+      <id>release</id>
+      <url>dav:http://ubuntu:8080/archiva/repository/release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot</id>
+      <url>dav:http://ubuntu:8080/archiva/repository/snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
 
