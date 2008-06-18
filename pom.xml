@@ -129,6 +129,16 @@ This is a super pom for all my java projects.
           <artifactId>maven-source-plugin</artifactId>
           <version>2.0.4</version>
         </plugin>
+
+        <!-- IDEs -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-eclipse-plugin</artifactId>
+          <version>2.5.1</version>
+          <configuration>
+            <buildOutputDirectory>${basedir}/target-eclipse/classes</buildOutputDirectory>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <extensions>
