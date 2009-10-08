@@ -28,11 +28,11 @@ This is a super pom for all my java projects.
   <distributionManagement>
     <repository>
       <id>release</id>
-      <url>http://guima/nexus/content/repositories/internal-release/</url>
+      <url>http://guima/nexus/content/repositories/internal-release</url>
     </repository>
     <snapshotRepository>
       <id>snapshot</id>
-      <url>http://guima/nexus/content/repositories/internal-snapshot/</url>
+      <url>http://guima/nexus/content/repositories/internal-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
