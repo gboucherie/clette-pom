@@ -13,160 +13,26 @@ This is a super pom for all my java projects.
 
   <build>
     <pluginManagement>
-      <plugins>
-        <!-- CORE PLUGINS -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>2.2</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>2.0.2</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.3</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>2.2</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>2.2</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>2.0-beta-6</version>
-          <configuration>
-            <locales>fr</locales>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.4.3</version>
-          <configuration>
-            <forkMode>always</forkMode>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-verifier-plugin</artifactId>
-          <version>1.0-beta-1</version>
-        </plugin>
-
-        <!-- PACKAGING TYPES / TOOLS -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>2.2</version>
-          <configuration>
-            <archive>
-              <manifest>
-                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-              </manifest>
-              <manifestEntries>
-                <Implementation-BuildTimestamp>${timestamp}</Implementation-BuildTimestamp>
-                <Implementation-SCMRevision>${buildNumber}</Implementation-SCMRevision>
-              </manifestEntries>
-            </archive>
-          </configuration>
-        </plugin>
-
-        <!-- REPORTING -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-changelog-plugin</artifactId>
-          <version>2.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-changes-plugin</artifactId>
-          <version>2.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>2.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.4</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jxr-plugin</artifactId>
-          <version>2.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-pmd-plugin</artifactId>
-          <version>2.4</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-report-plugin</artifactId>
-          <version>2.4.3</version>
-        </plugin>
-
-        <!-- TOOLS -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.0-beta-7</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>2.0.4</version>
-        </plugin>
-
-        <!-- IDEs -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-eclipse-plugin</artifactId>
-          <version>2.5.1</version>
-          <configuration>
-            <buildOutputDirectory>${basedir}/target-eclipse/classes</buildOutputDirectory>
-          </configuration>
-        </plugin>
-      </plugins>
     </pluginManagement>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-webdav</artifactId>
-        <version>1.0-beta-2</version>
-      </extension>
-    </extensions>
   </build>
 
   <name>clette-pom</name>
-  <url>http://maven.apache.org</url>
+  <url>http://guima</url>
 
   <scm>
-    <connection>scm:svn:http://ubuntu/svn/clette-pom/trunk/</connection>
-    <developerConnection>scm:svn:http://ubuntu/svn/clette-pom/trunk/</developerConnection>
-    <url>http://ubuntu/svn/clette-pom/trunk/</url>
+    <connection>scm:svn:http://guima/svn/clette-pom/trunk/</connection>
+    <developerConnection>scm:svn:http://guima/svn/clette-pom/trunk/</developerConnection>
+    <url>http://guima/svn/clette-pom/trunk/</url>
   </scm>
 
   <distributionManagement>
     <repository>
       <id>release</id>
-      <url>dav:http://ubuntu:8080/archiva/repository/release/</url>
+      <url>http://guima/nexus/content/repositories/internal-release/</url>
     </repository>
     <snapshotRepository>
       <id>snapshot</id>
-      <url>dav:http://ubuntu:8080/archiva/repository/snapshot/</url>
+      <url>http://guima/nexus/content/repositories/internal-snapshot/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
