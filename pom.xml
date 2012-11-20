@@ -75,7 +75,6 @@
   </build>
 
   <name>clette-pom</name>
-  <url>http://localhost</url>
 
   <scm>
     <connection>scm:svn:http://localhost/svn/clette-pom/trunk/</connection>
