@@ -91,9 +91,9 @@
 	<name>clette-pom</name>
 
 	<scm>
-		<connection>scm:svn:http://localhost/svn/clette-pom/trunk/</connection>
-		<developerConnection>scm:svn:http://localhost/svn/clette-pom/trunk/</developerConnection>
-		<url>http://localhost/svn/clette-pom/trunk/</url>
+		<connection>scm:svn:https://www.clettebou.fr/svn/clette-pom/trunk/</connection>
+		<developerConnection>scm:svn:http://www.clettebou.fr/svn/clette-pom/trunk/</developerConnection>
+		<url>http://www.clettebou.fr/svn/clette-pom/trunk/</url>
 	</scm>
 
 	<distributionManagement>
