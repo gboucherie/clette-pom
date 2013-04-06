@@ -9,6 +9,10 @@
 
 	<description>This is a super pom for all my java projects.</description>
 
+	<properties>
+		<project.scm.id>scm-id</project.scm.id>
+	</properties>
+
 	<build>
 		<pluginManagement>
 			<plugins>
