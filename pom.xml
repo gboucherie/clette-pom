@@ -100,24 +100,24 @@
 	<name>clette-pom</name>
 
 	<scm>
-		<connection>scm:svn:https://www.clettebou.fr/svn/clette-pom/trunk/</connection>
-		<developerConnection>scm:svn:https://www.clettebou.fr/svn/clette-pom/trunk/</developerConnection>
-		<url>https://www.clettebou.fr/svn/clette-pom/trunk/</url>
+		<connection>scm:svn:http://guillem2/svn/clette-pom/trunk/</connection>
+		<developerConnection>scm:svn:http://guillem2/svn/clette-pom/trunk/</developerConnection>
+		<url>http://guillem2/svn/clette-pom/trunk/</url>
 	</scm>
 
 	<ciManagement>
 		<system>jenkins</system>
-		<url>https://www.clettebou.fr/jenkins</url>
+		<url>http://guillem2/jenkins</url>
 	</ciManagement>
 
 	<distributionManagement>
 		<repository>
 			<id>release</id>
-			<url>https://www.clettebou.fr/nexus/content/repositories/releases</url>
+			<url>http://guillem2/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshot</id>
-			<url>https://www.clettebou.fr/nexus/content/repositories/snapshots</url>
+			<url>http://guillem2/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
