@@ -101,9 +101,9 @@
 	<name>clette-pom</name>
 
 	<scm>
-		<connection>scm:svn:http://guillem2/svn/clette-pom/trunk/</connection>
-		<developerConnection>scm:svn:http://guillem2/svn/clette-pom/trunk/</developerConnection>
-		<url>http://guillem2/svn/clette-pom/trunk/</url>
+		<connection>scm:git:git://github.com:gboucherie/library.git</connection>
+		<developerConnection>scm:git:git://github.com:gboucherie/library.git</developerConnection>
+		<url>https://github.com/gboucherie/library</url>
 	</scm>
 
 	<ciManagement>
