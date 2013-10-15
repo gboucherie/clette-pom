@@ -7,7 +7,7 @@
 	<version>1.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<description>This is a super pom for all my java projects.</description>
+	<description>This is a super pom for all my java projects. test</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
