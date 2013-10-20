@@ -103,8 +103,8 @@
 	<name>clette-pom</name>
 
 	<scm>
-		<connection>scm:git:git://github.com:gboucherie/clette-pom.git</connection>
-		<developerConnection>scm:git:git://github.com:gboucherie/clette-pom.git</developerConnection>
+		<connection>scm:git:git://github.com/gboucherie/clette-pom.git</connection>
+		<developerConnection>scm:git:git://github.com/gboucherie/clette-pom.git</developerConnection>
 		<url>https://github.com/gboucherie/clette-pom</url>
 	</scm>
 
