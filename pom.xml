@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.clettebou.maven.poms</groupId>
 	<artifactId>clette-pom</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	<packaging>pom</packaging>
 
 	<description>This is a super pom for all my java projects. test</description>
@@ -106,7 +106,7 @@
 		<connection>scm:git:ssh://git@github.com/gboucherie/clette-pom.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/gboucherie/clette-pom.git</developerConnection>
 		<url>https://github.com/gboucherie/clette-pom</url>
-		<tag>HEAD</tag>
+		<tag>clette-pom-1.2</tag>
 	</scm>
 
 	<ciManagement>
