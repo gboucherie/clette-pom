@@ -106,6 +106,7 @@
 		<connection>scm:git:ssh://github.com/gboucherie/clette-pom.git</connection>
 		<developerConnection>scm:git:ssh://github.com/gboucherie/clette-pom.git</developerConnection>
 		<url>https://github.com/gboucherie/clette-pom</url>
+		<tag>HEAD</tag>
 	</scm>
 
 	<ciManagement>
